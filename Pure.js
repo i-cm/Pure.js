@@ -1,12 +1,10 @@
-export { pure as default }
-
 class Result {
     constructor(res) {
         this.result = res
     }
 }
 
-const pure = (new(class {
+export const pure = (new(class {
     constructor() {
         this.cache = []
         this.id = 0
